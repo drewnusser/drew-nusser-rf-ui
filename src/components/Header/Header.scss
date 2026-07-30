@@ -16,10 +16,13 @@
             align-items: flex-start;
             display: flex;
             flex-direction: column;
+            h1{
+                margin-bottom: 10px;
+            }
+            p {
+                margin: 0;
+            }
         }
-    }
-    .header-edit-event-button {
-        
     }
 }
 
