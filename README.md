@@ -35,4 +35,4 @@ See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rule
 
 [View on the web](https://drew-nusser-rf-ui.vercel.app/)
 
-To run it locally, just open a terminal in the root and type "npm run dev"
+To run it locally, just open a terminal in the root and run "npm install" and then "npm run dev"
