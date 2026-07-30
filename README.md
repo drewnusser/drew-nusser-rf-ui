@@ -33,3 +33,6 @@ See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rule
 
 ## Running the project
 
+[View on the web](https://drew-nusser-rf-ui.vercel.app/)
+
+To run it locally, just open a terminal in the root and type "npm run dev"
