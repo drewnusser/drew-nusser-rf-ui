@@ -13,6 +13,11 @@ const Sidebar = () => {
     hamburgerRef.current?.classList.toggle('is-active');
   }
 
+  const closeMenu = () => {    
+    sidebarRef.current?.classList.remove('open');
+    hamburgerRef.current?.classList.remove('is-active');
+  }
+
   return (
     <>
       <button ref={hamburgerRef} className="hamburger hamburger--spin" type="button" onClick={toggleMenu}>
@@ -34,17 +39,17 @@ const Sidebar = () => {
           <div className="sidebar-links-header">RainFocus Summit</div>
           <div className="details">Lehi, UT &bull; December 15th</div>
           <input type="text" placeholder="Search..." className="sidebar-search" />
-          <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Guide">Guide</NavLink>
-          <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Attendees">Attendees</NavLink>
+          <NavLink onClick={closeMenu} className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Guide">Guide</NavLink>
+          <NavLink onClick={closeMenu} className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Attendees">Attendees</NavLink>
           <div className="sidebar-sublinks">
-            <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Attendees/Attendees">Attendees</NavLink>
-            <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Attendees/AttendeeTypes">Attendee Types</NavLink>
-            <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Attendees/Packages">Packages</NavLink>
-            <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Attendees/RegCodes">Reg Codes</NavLink>
-            <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Attendees/Discounts">Discounts</NavLink>
+            <NavLink onClick={closeMenu} className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Attendees/Attendees">Attendees</NavLink>
+            <NavLink onClick={closeMenu} className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Attendees/AttendeeTypes">Attendee Types</NavLink>
+            <NavLink onClick={closeMenu} className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Attendees/Packages">Packages</NavLink>
+            <NavLink onClick={closeMenu} className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Attendees/RegCodes">Reg Codes</NavLink>
+            <NavLink onClick={closeMenu} className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Attendees/Discounts">Discounts</NavLink>
           </div>
-          <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Content">Content</NavLink>
-          <NavLink className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Exhibitors">Exhibitors</NavLink>
+          <NavLink onClick={closeMenu} className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Content">Content</NavLink>
+          <NavLink onClick={closeMenu} className={({ isActive }) => isActive ? "nav-item active" : "nav-item"} to="/Exhibitors">Exhibitors</NavLink>
         </div>
       </nav>
     </>
