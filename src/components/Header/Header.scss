@@ -1,0 +1,30 @@
+.site-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse; 
+    gap: 20px;
+    .header-details{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+        .header-details-text {
+            display: flex;
+            text-align: left;
+            justify-content: flex-start;
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .header-edit-event-button {
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        margin-top: 10px
+    }
+}

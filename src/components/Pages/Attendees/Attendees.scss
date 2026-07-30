@@ -1,0 +1,80 @@
+.attendees-page {
+    .attendees-header {
+        padding-bottom: 40px;
+        border-bottom: 1px solid #ccc;
+        p{
+            margin: 0;
+        }
+    }
+    .attendees-cap {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+    }
+    .attendees-modules{
+        display: flex;
+        flex-direction: column;
+        .attendees-module {
+            margin-top: 30px;
+            .attendees-module-title {
+                margin-bottom: 10px;
+            }
+            .attendees-module-header {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                h3 {
+                    margin: 0;
+                }
+            }
+        .attendees-module-body-container {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            flex-wrap: wrap;
+            .attendees-module-body{
+                padding: 15px 30px;
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+                border: solid 1px #ccc;
+                border-radius: 6px;
+                flex-wrap: wrap;
+                min-width: 284px;
+                min-height: 90px;
+                align-items: center;
+                @media (max-width: 768px) {
+                    width: 100%;
+                    min-width: 0;
+                }
+                &.center {
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &.full-width {
+                    flex-grow: 1;
+                }
+                .attendees-module-item {
+                    display: block;
+                    max-width: 240px;
+                    color: #393551;
+                    text-decoration: none;
+       
+                    .attendees-module-item-title {
+                        color: #222222;
+                        line-height: 2em;
+                    }
+                    .attendees-module-item-description {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        }
+    }
+}
